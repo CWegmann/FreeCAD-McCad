@@ -32,6 +32,7 @@ void McCadConversion::run()
 
     stopped = false;
 
+    // does not need to be on the heap!
     McCadMessager_Signal *msg = McCadMessager_Signal::Instance();
     msg->sig_progress_main(0);
     msg->sig_main_label(QString::fromLatin1("Load the configuration"));
